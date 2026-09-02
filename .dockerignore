@@ -1,0 +1,8 @@
+.env
+.git
+.gitignore
+.DS_Store
+design-qa.md
+node_modules
+qa
+README.md
