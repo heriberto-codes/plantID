@@ -42,6 +42,12 @@ function verifyAge (age) {
       // store the base64image in a variable
       const base64Image = e.target.result;
       console.log('base64Image', base64Image);
+
+      // Show the selected photo as soon as it is available.
+      const previewImage = document.getElementById('previewImage');
+      previewImage.src = base64Image;
+      previewImage.hidden = false;
+
       // store variables for the API call 
       const apiKey = 'acKnGmOdWSpInvtVa3sdYng5rvXpp70i0zLNy8lCnp1HZuid7C';
       const latitude = 49.207;
@@ -121,6 +127,7 @@ function verifyAge (age) {
     const similiarImageHTML = document.getElementById('plant-similiar-image');
     // set the image HTML src atrribute to the image
     similiarImageHTML.src = plantSimiliarImage;
+    similiarImageHTML.hidden = false;
   
     // ======================================
     //  PROBABILITY
@@ -208,6 +215,7 @@ function verifyAge (age) {
     const similiarImageWithDiseaseHTML = document.getElementById('plant-similiar-image-with-disease');
     // set the image HTML src atrribute to the image
     similiarImageWithDiseaseHTML.src = plantSimiliarImageWithDisease;
+    similiarImageWithDiseaseHTML.hidden = false;
   
   
     // ======================================
