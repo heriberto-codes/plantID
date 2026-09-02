@@ -1,5 +1,7 @@
 # PlantID
 
+**[View the live demo](https://plantid-heriberto.fly.dev/)**
+
 PlantID is a browser-based plant identification demo. Upload a plant photo to receive a likely species match, confidence information, common names, a description, health status, possible disease information, and treatment suggestions.
 
 The app is built with semantic HTML, custom responsive CSS, Bootstrap Icons, vanilla JavaScript, and a small Node.js server. It uses the [Plant.id API](https://plant.id/) for identification.
